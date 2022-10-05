@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://screens/game/game.tscn" type="PackedScene" id=1]
+[ext_resource path="res://global_assets/theme_3/theme_3.tres" type="Theme" id=4]
+
+[node name="Game" instance=ExtResource( 1 )]
+theme = ExtResource( 4 )
+
+[node name="GotoConfigButton" parent="." index="3"]
+margin_left = 575.0
+margin_top = 1490.0
+margin_right = 960.0
+margin_bottom = 1630.0
+
+[editable path="CircularCountDown"]
+[editable path="CircularCountDown/CircularProgressBar"]

@@ -1,0 +1,62 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://backgrounds/background_theme_2.gd" type="Script" id=1]
+[ext_resource path="res://backgrounds/assets_theme_2/layer_02_2048 x 1546_ground.png" type="Texture" id=2]
+[ext_resource path="res://backgrounds/assets_theme_2/layer_03_2048 x 1546_trees_1.png" type="Texture" id=3]
+[ext_resource path="res://backgrounds/assets_theme_2/layer_06_2048 x 1546_stars.png" type="Texture" id=4]
+[ext_resource path="res://backgrounds/assets_theme_2/layer_07_2048 x 1546_moon_clound_bk.png" type="Texture" id=5]
+[ext_resource path="res://backgrounds/assets_theme_2/layer_04_2048 x 1546_trees_2.png" type="Texture" id=6]
+[ext_resource path="res://backgrounds/assets_theme_2/layer_05_2048 x 1546_trees_3.png" type="Texture" id=7]
+
+[node name="TestBackground1" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="MoonCloundBkLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 2865, 0 )
+
+[node name="MoonCloundBk" type="Sprite" parent="ParallaxBackground/MoonCloundBkLayer"]
+position = Vector2( 1112, 1065 )
+scale = Vector2( 1.5, 1.4 )
+texture = ExtResource( 5 )
+
+[node name="StarsLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 2865, 0 )
+
+[node name="Stars" type="Sprite" parent="ParallaxBackground/StarsLayer"]
+position = Vector2( 1120, 1067 )
+scale = Vector2( 1.5, 1.4 )
+texture = ExtResource( 4 )
+
+[node name="Trees3Layer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 2865, 0 )
+
+[node name="Trees3" type="Sprite" parent="ParallaxBackground/Trees3Layer"]
+position = Vector2( 1120, 1067 )
+scale = Vector2( 1.5, 1.4 )
+texture = ExtResource( 7 )
+
+[node name="Trees2Layer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 2865, 0 )
+
+[node name="Trees2" type="Sprite" parent="ParallaxBackground/Trees2Layer"]
+position = Vector2( 1120, 1067 )
+scale = Vector2( 1.5, 1.4 )
+texture = ExtResource( 6 )
+
+[node name="Trees1Layer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 2865, 0 )
+
+[node name="Trees1" type="Sprite" parent="ParallaxBackground/Trees1Layer"]
+position = Vector2( 1120, 1067 )
+scale = Vector2( 1.5, 1.4 )
+texture = ExtResource( 3 )
+
+[node name="GroundLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 2865, 0 )
+
+[node name="Ground" type="Sprite" parent="ParallaxBackground/GroundLayer"]
+position = Vector2( 1120, 1064 )
+scale = Vector2( 1.5, 1.4 )
+texture = ExtResource( 2 )

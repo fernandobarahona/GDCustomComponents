@@ -1,0 +1,74 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://circular_count_down/circular_count_down.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/circular_white2.png" type="Texture" id=2]
+[ext_resource path="res://assets/manecillasmdpi.png" type="Texture" id=3]
+[ext_resource path="res://assets/count_down_background.png" type="Texture" id=4]
+[ext_resource path="res://assets/circular_progress_bar_number.tres" type="DynamicFont" id=5]
+[ext_resource path="res://assets/RoundMinus.png" type="Texture" id=6]
+[ext_resource path="res://assets/RoundPlus.png" type="Texture" id=7]
+[ext_resource path="res://Main.gd" type="Script" id=8]
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 8 )
+
+[node name="CircularCountDown" parent="." instance=ExtResource( 1 )]
+margin_left = 424.0
+margin_top = 679.0
+margin_right = 424.0
+margin_bottom = 679.0
+
+[node name="TextureProgress" parent="CircularCountDown/CircularProgressBar" index="0"]
+rect_min_size = Vector2( 180, 180 )
+texture_under = ExtResource( 4 )
+texture_over = ExtResource( 3 )
+texture_progress = ExtResource( 2 )
+
+[node name="Label" parent="CircularCountDown/CircularProgressBar" index="1"]
+margin_left = 70.0
+margin_top = 57.0
+margin_right = 111.0
+margin_bottom = 132.0
+custom_colors/font_color = Color( 0, 0.87451, 0, 1 )
+custom_fonts/font = ExtResource( 5 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 203.0
+margin_top = 363.0
+margin_right = 864.0
+margin_bottom = 438.0
+custom_fonts/font = ExtResource( 5 )
+text = "Tiempo de timer: "
+
+[node name="LabelTiempo" type="Label" parent="."]
+margin_left = 497.0
+margin_top = 512.0
+margin_right = 538.0
+margin_bottom = 587.0
+custom_colors/font_color = Color( 0, 0.87451, 0, 1 )
+custom_fonts/font = ExtResource( 5 )
+text = "5"
+
+[node name="RoundPlus" type="TextureButton" parent="."]
+margin_left = 629.0
+margin_top = 484.0
+margin_right = 729.0
+margin_bottom = 584.0
+rect_min_size = Vector2( 100, 100 )
+texture_normal = ExtResource( 7 )
+expand = true
+
+[node name="RoundMinus" type="TextureButton" parent="."]
+margin_left = 301.0
+margin_top = 484.0
+margin_right = 401.0
+margin_bottom = 584.0
+rect_min_size = Vector2( 100, 100 )
+texture_normal = ExtResource( 6 )
+expand = true
+
+[connection signal="button_down" from="RoundPlus" to="." method="_on_RoundPlus_button_down"]
+[connection signal="button_down" from="RoundMinus" to="." method="_on_RoundMinus_button_down"]
+
+[editable path="CircularCountDown"]
+[editable path="CircularCountDown/CircularProgressBar"]

@@ -1,0 +1,6 @@
+[gd_scene format=2]
+
+[node name="SignalEmmiterScene1" type="Button"]
+margin_right = 269.0
+margin_bottom = 49.0
+text = "SignalEmmiterScene1 (root node button)"

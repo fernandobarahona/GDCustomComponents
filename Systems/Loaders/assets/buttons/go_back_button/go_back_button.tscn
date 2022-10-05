@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/fonts/Tigerious_dynamicfont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://assets/buttons/textures_theme_1/BTN_BLUE_RECT_IN.png" type="Texture" id=2]
+[ext_resource path="res://assets/buttons/textures_theme_1/BTN_BLUE_RECT_OUT.png" type="Texture" id=3]
+[ext_resource path="res://assets/buttons/go_back_button/go_back_button.gd" type="Script" id=4]
+
+[node name="GoBackButton" type="TextureButton"]
+margin_right = 40.0
+margin_bottom = 40.0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 2 )
+script = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 57.0
+margin_top = 39.0
+margin_right = 328.0
+margin_bottom = 96.0
+custom_fonts/font = ExtResource( 1 )
+text = "go Back"
+
+[connection signal="pressed" from="." to="." method="_on_GoBackButton_pressed"]

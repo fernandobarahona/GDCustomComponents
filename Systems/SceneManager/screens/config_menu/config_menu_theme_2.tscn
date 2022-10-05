@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://screens/config_menu/config_menu.tscn" type="PackedScene" id=1]
+[ext_resource path="res://global_assets/theme_2/theme_2.tres" type="Theme" id=4]
+
+[node name="ConfigMenu" instance=ExtResource( 1 )]
+theme = ExtResource( 4 )
+
+[editable path="GotoTheme1Button"]
+[editable path="GotoTheme2Button"]
+[editable path="GotoTheme3Button"]

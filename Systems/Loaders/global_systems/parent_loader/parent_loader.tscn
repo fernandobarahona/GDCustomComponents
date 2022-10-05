@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://global_systems/parent_loader/example_scene.tscn" type="PackedScene" id=1]
+[ext_resource path="res://global_systems/parent_loader/parent_loader.gd" type="Script" id=2]
+
+[node name="ParentLoader" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="ExampleScene" parent="." instance=ExtResource( 1 )]

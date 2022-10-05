@@ -1,0 +1,81 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://texture_button_option_selector/texture_button_option_selector.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/icon1.png" type="Texture" id=2]
+[ext_resource path="res://assets/RoundPlus.png" type="Texture" id=3]
+[ext_resource path="res://Main.gd" type="Script" id=4]
+[ext_resource path="res://assets/circular_progress_bar_number.tres" type="DynamicFont" id=5]
+[ext_resource path="res://assets/focus.png" type="Texture" id=6]
+[ext_resource path="res://assets/RoundMinus.png" type="Texture" id=9]
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="IconSelector" parent="." instance=ExtResource( 1 )]
+selected_item_id = 2
+
+[node name="TextureButton" type="TextureButton" parent="IconSelector"]
+margin_left = 210.0
+margin_top = 632.0
+margin_right = 339.0
+margin_bottom = 758.0
+texture_normal = ExtResource( 2 )
+texture_focused = ExtResource( 6 )
+expand = true
+
+[node name="TextureButton2" type="TextureButton" parent="IconSelector"]
+margin_left = 459.0
+margin_top = 619.0
+margin_right = 634.0
+margin_bottom = 778.0
+texture_normal = ExtResource( 2 )
+texture_focused = ExtResource( 6 )
+expand = true
+
+[node name="TextureButton3" type="TextureButton" parent="IconSelector"]
+margin_left = 787.0
+margin_top = 620.0
+margin_right = 962.0
+margin_bottom = 779.0
+texture_normal = ExtResource( 2 )
+texture_focused = ExtResource( 6 )
+expand = true
+
+[node name="Plus" type="TextureButton" parent="."]
+margin_left = 634.0
+margin_top = 181.0
+margin_right = 875.0
+margin_bottom = 422.0
+texture_normal = ExtResource( 3 )
+expand = true
+
+[node name="Minus" type="TextureButton" parent="."]
+margin_left = 137.0
+margin_top = 173.0
+margin_right = 378.0
+margin_bottom = 414.0
+rect_min_size = Vector2( 241, 241 )
+texture_normal = ExtResource( 9 )
+expand = true
+
+[node name="NumberLabel" type="Label" parent="."]
+margin_left = 54.0
+margin_top = 1242.0
+margin_right = 999.0
+margin_bottom = 1401.0
+custom_fonts/font = ExtResource( 5 )
+text = "El elemento seleccionado
+es el No"
+align = 1
+
+[node name="Number" type="Label" parent="."]
+margin_left = 440.0
+margin_top = 1456.0
+margin_right = 825.0
+margin_bottom = 1534.0
+custom_colors/font_color = Color( 0.231373, 0.823529, 0.0745098, 1 )
+custom_fonts/font = ExtResource( 5 )
+text = "Placeholder"
+
+[connection signal="pressed" from="Plus" to="." method="_on_Plus_pressed"]
+[connection signal="pressed" from="Minus" to="." method="_on_Minus_pressed"]

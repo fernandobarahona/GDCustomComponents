@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://texture_button_option_selector_positional_arrow/texture_button_option_selector_positional_arrow.gd" type="Script" id=1]
+[ext_resource path="res://texture_button_option_selector_positional_arrow/positional_arrow/positional_arrow.tscn" type="PackedScene" id=2]
+
+[node name="TextureButtonOptionSelector" type="Node2D"]
+script = ExtResource( 1 )
+selected_item_id = -1
+
+[node name="PositionalArrow" parent="." instance=ExtResource( 2 )]

@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://global_assets/all_themes_fonts/dynamic_fonts/button_font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://global_assets/theme_1/theme_1.tres" type="Theme" id=2]
+[ext_resource path="res://global_objects/buttons/go_back_button/go_back_button.gd" type="Script" id=3]
+[ext_resource path="res://screens/sub_menu_a/sub_menu_a.gd" type="Script" id=4]
+
+[node name="SubMenuA" type="Control"]
+theme = ExtResource( 2 )
+script = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 300.0
+margin_top = 452.0
+margin_right = 683.0
+margin_bottom = 509.0
+custom_fonts/font = ExtResource( 1 )
+text = "SUBMENU AAA "
+
+[node name="GoToGameButton" type="Button" parent="."]
+margin_left = 262.0
+margin_top = 701.0
+margin_right = 729.0
+margin_bottom = 829.0
+text = "goto game"
+
+[node name="GoBackButton" type="Button" parent="."]
+margin_left = 297.0
+margin_top = 953.0
+margin_right = 697.0
+margin_bottom = 1088.0
+text = "go back"
+script = ExtResource( 3 )
+
+[connection signal="pressed" from="GoToGameButton" to="." method="_on_GoToGameButton_pressed"]

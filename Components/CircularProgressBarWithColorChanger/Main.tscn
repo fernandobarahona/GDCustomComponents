@@ -1,0 +1,81 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://circular_progress_bar/circular_progress_bar.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/count_down_background.png" type="Texture" id=2]
+[ext_resource path="res://assets/circular_white2.png" type="Texture" id=3]
+[ext_resource path="res://assets/manecillasmdpi.png" type="Texture" id=4]
+[ext_resource path="res://assets/circular_progress_bar_number.tres" type="DynamicFont" id=5]
+[ext_resource path="res://assets/RoundMinus.png" type="Texture" id=6]
+[ext_resource path="res://assets/RoundPlus.png" type="Texture" id=7]
+[ext_resource path="res://Main.gd" type="Script" id=8]
+[ext_resource path="res://assets/RoundMinus10.png" type="Texture" id=9]
+[ext_resource path="res://assets/RoundPlus10.png" type="Texture" id=10]
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 8 )
+
+[node name="CircularProgressBar" parent="." instance=ExtResource( 1 )]
+margin_left = 411.0
+margin_top = 452.0
+margin_right = 589.0
+margin_bottom = 640.0
+danger_color = Color( 0.941176, 0.352941, 0.141176, 1 )
+
+[node name="TextureProgress" parent="CircularProgressBar" index="0"]
+margin_left = -34.0
+margin_top = 25.0
+margin_right = 324.0
+margin_bottom = 383.0
+rect_min_size = Vector2( 170, 170 )
+texture_under = ExtResource( 2 )
+texture_over = ExtResource( 4 )
+texture_progress = ExtResource( 3 )
+
+[node name="Label" parent="CircularProgressBar" index="1"]
+margin_left = 65.0
+margin_top = 59.0
+margin_right = 220.0
+margin_bottom = 343.0
+custom_colors/font_color = Color( 0, 0.87451, 0, 1 )
+custom_fonts/font = ExtResource( 5 )
+align = 1
+valign = 1
+
+[node name="MinusBtn" type="TextureButton" parent="."]
+margin_left = 249.0
+margin_top = 226.0
+margin_right = 449.0
+margin_bottom = 426.0
+texture_normal = ExtResource( 6 )
+expand = true
+
+[node name="PlusBtn" type="TextureButton" parent="."]
+margin_left = 624.0
+margin_top = 237.0
+margin_right = 824.0
+margin_bottom = 437.0
+texture_normal = ExtResource( 7 )
+expand = true
+
+[node name="Minus10Btn" type="TextureButton" parent="."]
+margin_left = 20.0
+margin_top = 221.0
+margin_right = 220.0
+margin_bottom = 421.0
+texture_normal = ExtResource( 9 )
+expand = true
+
+[node name="Plus10Btn" type="TextureButton" parent="."]
+margin_left = 847.0
+margin_top = 241.0
+margin_right = 1047.0
+margin_bottom = 441.0
+texture_normal = ExtResource( 10 )
+expand = true
+
+[connection signal="pressed" from="MinusBtn" to="." method="_on_MinusBtn_pressed"]
+[connection signal="pressed" from="PlusBtn" to="." method="_on_PlusBtn_pressed"]
+[connection signal="pressed" from="Minus10Btn" to="." method="_on_Minus10Btn_pressed"]
+[connection signal="pressed" from="Plus10Btn" to="." method="_on_Plus10Btn_pressed"]
+
+[editable path="CircularProgressBar"]

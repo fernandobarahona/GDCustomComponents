@@ -1,0 +1,80 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://global_objects/buttons/loading_button/loading_button.tscn" type="PackedScene" id=1]
+[ext_resource path="res://screens/config_menu/config_menu.gd" type="Script" id=2]
+[ext_resource path="res://global_objects/buttons/loading_button/loading_button.gd" type="Script" id=3]
+[ext_resource path="res://global_assets/all_themes_fonts/dynamic_fonts/button_font.tres" type="DynamicFont" id=5]
+[ext_resource path="res://global_objects/buttons/plus_button/plus_button.tscn" type="PackedScene" id=6]
+[ext_resource path="res://global_objects/buttons/minus_button/minus_button.tscn" type="PackedScene" id=7]
+[ext_resource path="res://global_assets/theme_1/theme_1.tres" type="Theme" id=8]
+
+[node name="ConfigMenu" type="Control"]
+theme = ExtResource( 8 )
+script = ExtResource( 2 )
+
+[node name="GotoTheme1Button" type="Button" parent="."]
+margin_left = 296.0
+margin_top = 296.0
+margin_right = 688.0
+margin_bottom = 425.0
+text = "theme1"
+script = ExtResource( 3 )
+
+[node name="GotoTheme2Button" parent="." instance=ExtResource( 1 )]
+margin_left = 296.0
+margin_top = 464.0
+margin_right = 688.0
+margin_bottom = 602.0
+text = "theme2"
+
+[node name="LoadingCircularBar" parent="GotoTheme2Button" index="0"]
+margin_left = 146.0
+margin_right = 254.0
+
+[node name="GotoTheme3Button" parent="." instance=ExtResource( 1 )]
+margin_left = 296.0
+margin_top = 640.0
+margin_right = 688.0
+margin_bottom = 778.0
+text = "theme3"
+
+[node name="SpeedLabel" type="Label" parent="."]
+margin_left = 400.0
+margin_top = 1053.0
+margin_right = 611.0
+margin_bottom = 1110.0
+custom_fonts/font = ExtResource( 5 )
+text = "Speed"
+
+[node name="SpeedValue" type="Label" parent="."]
+margin_left = 470.0
+margin_top = 1201.0
+margin_right = 566.0
+margin_bottom = 1258.0
+custom_fonts/font = ExtResource( 5 )
+text = "4"
+
+[node name="PlusButton" parent="." instance=ExtResource( 6 )]
+margin_left = 249.0
+margin_top = 1170.0
+margin_right = 383.0
+margin_bottom = 1304.0
+
+[node name="MinusButton" parent="." instance=ExtResource( 7 )]
+margin_left = 605.0
+margin_top = 1167.0
+margin_right = 739.0
+margin_bottom = 1301.0
+
+[node name="GoBackButton" type="Button" parent="."]
+margin_left = 326.0
+margin_top = 1531.0
+margin_right = 679.0
+margin_bottom = 1644.0
+text = "go back"
+
+[connection signal="pressed" from="PlusButton" to="." method="_change_speed_value"]
+[connection signal="pressed" from="MinusButton" to="." method="_change_speed_value" binds= [ false ]]
+[connection signal="pressed" from="GoBackButton" to="." method="_on_GoBackButton_pressed"]
+
+[editable path="GotoTheme2Button"]

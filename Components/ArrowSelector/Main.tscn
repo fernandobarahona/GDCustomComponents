@@ -1,0 +1,39 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://arrow_selector/arrow_selector.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/arrow_line.png" type="Texture" id=2]
+[ext_resource path="res://assets/arrow_pointer.png" type="Texture" id=3]
+[ext_resource path="res://Main.gd" type="Script" id=4]
+[ext_resource path="res://assets/RoundPlus.png" type="Texture" id=5]
+[ext_resource path="res://assets/RoundMinus.png" type="Texture" id=6]
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="ArrowSelector" parent="." instance=ExtResource( 1 )]
+position = Vector2( 513, 352 )
+line_texture = ExtResource( 2 )
+pointer_texture = ExtResource( 3 )
+number_of_items = 10
+tweened_pointer_movement = true
+
+[node name="Plus" type="TextureButton" parent="."]
+margin_left = 643.0
+margin_top = 110.0
+margin_right = 760.0
+margin_bottom = 224.0
+texture_normal = ExtResource( 5 )
+expand = true
+stretch_mode = 4
+
+[node name="Minus" type="TextureButton" parent="."]
+margin_left = 272.0
+margin_top = 110.0
+margin_right = 388.0
+margin_bottom = 230.0
+texture_normal = ExtResource( 6 )
+expand = true
+stretch_mode = 4
+
+[connection signal="button_down" from="Plus" to="." method="_on_Plus_button_down"]
+[connection signal="button_down" from="Minus" to="." method="_on_Minus_button_down"]

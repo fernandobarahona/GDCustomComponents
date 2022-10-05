@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://arrow_progress_bar/arrow_progress_bar.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/arrow_pointer.png" type="Texture" id=2]
+[ext_resource path="res://assets/RoundMinus.png" type="Texture" id=4]
+[ext_resource path="res://main.gd" type="Script" id=5]
+[ext_resource path="res://assets/RoundPlus.png" type="Texture" id=6]
+[ext_resource path="res://assets/arrow_line2.png" type="Texture" id=7]
+
+[node name="main" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="Plus" type="TextureButton" parent="."]
+margin_left = 583.0
+margin_top = 86.0
+margin_right = 692.0
+margin_bottom = 196.0
+texture_normal = ExtResource( 6 )
+expand = true
+
+[node name="Minus" type="TextureButton" parent="."]
+margin_left = 343.0
+margin_top = 86.0
+margin_right = 452.0
+margin_bottom = 196.0
+texture_normal = ExtResource( 4 )
+expand = true
+
+[node name="ArrowProgressBar" parent="." instance=ExtResource( 1 )]
+position = Vector2( 506, 346 )
+line_texture = ExtResource( 7 )
+pointer_texture = ExtResource( 2 )
+value = 46.0
+
+[connection signal="pressed" from="Plus" to="." method="_on_Plus_pressed"]
+[connection signal="pressed" from="Minus" to="." method="_on_Minus_pressed"]

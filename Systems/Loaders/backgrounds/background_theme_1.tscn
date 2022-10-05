@@ -1,0 +1,77 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://backgrounds/background_theme_1.gd" type="Script" id=1]
+[ext_resource path="res://backgrounds/assets_theme_1/layer_03_2048 x 1546_color_buildings.png" type="Texture" id=2]
+[ext_resource path="res://backgrounds/assets_theme_1/layer_04_2048 x 1546_gray_buildings_1.png" type="Texture" id=3]
+[ext_resource path="res://backgrounds/assets_theme_1/layer_02_2048 x 1546_trees.png" type="Texture" id=4]
+[ext_resource path="res://backgrounds/assets_theme_1/layer_08_2048 x 1546_sky.png" type="Texture" id=5]
+[ext_resource path="res://backgrounds/assets_theme_1/layer_01_2048 x 1546_ground.png" type="Texture" id=6]
+[ext_resource path="res://backgrounds/assets_theme_1/layer_05_2048 x 1546_gray_buildings_2.png" type="Texture" id=7]
+[ext_resource path="res://backgrounds/assets_theme_1/layer_06_2048 x 1546_gray_buildings_3.png" type="Texture" id=8]
+[ext_resource path="res://backgrounds/assets_theme_1/layer_07_2048 x 1546_moon_and_clouds.png" type="Texture" id=9]
+
+[node name="TestBackground1" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="SkyLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 3271, 0 )
+
+[node name="Sky" type="Sprite" parent="ParallaxBackground/SkyLayer"]
+position = Vector2( 1637, 1120 )
+scale = Vector2( 1.6, 1.45 )
+texture = ExtResource( 5 )
+
+[node name="MoonAndCloudsLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 3271, 0 )
+
+[node name="MoonAndClouds" type="Sprite" parent="ParallaxBackground/MoonAndCloudsLayer"]
+position = Vector2( 1637, 1120 )
+scale = Vector2( 1.6, 1.45 )
+texture = ExtResource( 9 )
+
+[node name="GreyBuilding3Layer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 3271, 0 )
+
+[node name="GreyBuilding3" type="Sprite" parent="ParallaxBackground/GreyBuilding3Layer"]
+position = Vector2( 1637, 1120 )
+scale = Vector2( 1.6, 1.45 )
+texture = ExtResource( 8 )
+
+[node name="GrayBuilding2Layer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 3271, 0 )
+
+[node name="GrayBuilding2" type="Sprite" parent="ParallaxBackground/GrayBuilding2Layer"]
+position = Vector2( 1637, 1120 )
+scale = Vector2( 1.6, 1.45 )
+texture = ExtResource( 7 )
+
+[node name="GrayBuilding1Layer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 3271, 0 )
+
+[node name="GrayBuilding1" type="Sprite" parent="ParallaxBackground/GrayBuilding1Layer"]
+position = Vector2( 1637, 1120 )
+scale = Vector2( 1.6, 1.45 )
+texture = ExtResource( 3 )
+
+[node name="ColorBuildingsLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 3271, 0 )
+
+[node name="ColorBuildings" type="Sprite" parent="ParallaxBackground/ColorBuildingsLayer"]
+position = Vector2( 1637, 1120 )
+scale = Vector2( 1.6, 1.45 )
+texture = ExtResource( 2 )
+
+[node name="TreesAndGroundLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 3271, 0 )
+
+[node name="Trees" type="Sprite" parent="ParallaxBackground/TreesAndGroundLayer"]
+position = Vector2( 1637, 1120 )
+scale = Vector2( 1.6, 1.45 )
+texture = ExtResource( 4 )
+
+[node name="Ground" type="Sprite" parent="ParallaxBackground/TreesAndGroundLayer"]
+position = Vector2( 1637, 1120 )
+scale = Vector2( 1.6, 1.45 )
+texture = ExtResource( 6 )

@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://global_objects/buttons/loading_button/loading_button.gd" type="Script" id=3]
+[ext_resource path="res://screens/game/scene_elements/circular_count_down/assets_theme_1/circular_white2.png" type="Texture" id=4]
+
+[node name="LoadingButton" type="Button"]
+margin_right = 456.0
+margin_bottom = 128.0
+script = ExtResource( 3 )
+
+[node name="LoadingCircularBar" type="TextureProgress" parent="."]
+visible = false
+margin_left = 132.0
+margin_top = 14.0
+margin_right = 240.0
+margin_bottom = 108.0
+value = 33.0
+texture_progress = ExtResource( 4 )
+fill_mode = 4
+nine_patch_stretch = true

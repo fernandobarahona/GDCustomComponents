@@ -1,0 +1,17 @@
+[gd_scene format=2]
+
+[node name="ExampleScene" type="Node2D"]
+
+[node name="LoadButton" type="Button" parent="."]
+margin_left = 36.0
+margin_top = 55.0
+margin_right = 377.0
+margin_bottom = 175.0
+text = "LOAD"
+
+[node name="UnLoadButton" type="Button" parent="."]
+margin_left = 36.0
+margin_top = 247.0
+margin_right = 377.0
+margin_bottom = 367.0
+text = "UNLOAD"

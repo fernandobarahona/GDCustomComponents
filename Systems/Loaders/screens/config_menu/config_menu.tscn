@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/fonts/Tigerious_dynamicfont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://screens/config_menu/config_menu.gd" type="Script" id=2]
+
+[node name="TestScreen" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="UseBk1Button" type="Button" parent="."]
+margin_left = 345.0
+margin_top = 1355.0
+margin_right = 700.0
+margin_bottom = 1446.0
+custom_fonts/font = ExtResource( 1 )
+text = "USE BK1"
+
+[node name="UseBk2Button" type="Button" parent="."]
+margin_left = 345.0
+margin_top = 1499.0
+margin_right = 700.0
+margin_bottom = 1590.0
+custom_fonts/font = ExtResource( 1 )
+text = "USE BK2"
+
+[node name="UseBk3Button" type="Button" parent="."]
+margin_left = 345.0
+margin_top = 1651.0
+margin_right = 700.0
+margin_bottom = 1742.0
+custom_fonts/font = ExtResource( 1 )
+text = "USE BK3"
+
+[node name="BackgroundContainer" type="Node2D" parent="."]

@@ -1,0 +1,69 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://global_objects/buttons/go_back_button/go_back_button.gd" type="Script" id=1]
+[ext_resource path="res://screens/game/game.gd" type="Script" id=2]
+[ext_resource path="res://icon.png" type="Texture" id=3]
+[ext_resource path="res://screens/game/scene_elements/circular_count_down/circular_count_down.tscn" type="PackedScene" id=6]
+[ext_resource path="res://screens/game/scene_elements/circular_count_down/assets_theme_1/count_down_background.png" type="Texture" id=7]
+[ext_resource path="res://screens/game/scene_elements/circular_count_down/assets_theme_1/circular_white2.png" type="Texture" id=8]
+[ext_resource path="res://screens/game/scene_elements/circular_count_down/assets_theme_1/manecillasmdpi.png" type="Texture" id=9]
+[ext_resource path="res://screens/game/scene_elements/circular_count_down/count_down.tres" type="DynamicFont" id=10]
+[ext_resource path="res://global_assets/theme_1/theme_1.tres" type="Theme" id=12]
+
+[node name="Game" type="Control"]
+theme = ExtResource( 12 )
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 480, 192 )
+scale = Vector2( 5.25, 4.75 )
+texture = ExtResource( 3 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[node name="CircularCountDown" parent="." instance=ExtResource( 6 )]
+margin_left = 338.0
+margin_top = 918.0
+margin_right = 338.0
+margin_bottom = 918.0
+total_time = 18.0
+
+[node name="CircularProgressBar" parent="CircularCountDown" index="0"]
+ok_color = Color( 0, 0.321569, 1, 1 )
+danger_color = Color( 0.803922, 0, 1, 1 )
+
+[node name="TextureProgress" parent="CircularCountDown/CircularProgressBar" index="0"]
+margin_right = 300.0
+margin_bottom = 300.0
+texture_under = ExtResource( 7 )
+texture_over = ExtResource( 9 )
+texture_progress = ExtResource( 8 )
+
+[node name="Label" parent="CircularCountDown/CircularProgressBar" index="1"]
+margin_left = 105.0
+margin_top = 81.0
+margin_right = 191.0
+margin_bottom = 194.0
+custom_fonts/font = ExtResource( 10 )
+
+[node name="GotoConfigButton" type="Button" parent="."]
+margin_left = 571.0
+margin_top = 1580.0
+margin_right = 956.0
+margin_bottom = 1720.0
+text = "config"
+
+[node name="GoBackButton" type="Button" parent="."]
+margin_left = 100.0
+margin_top = 1582.0
+margin_right = 500.0
+margin_bottom = 1717.0
+text = "go back"
+script = ExtResource( 1 )
+
+[connection signal="pressed" from="GotoConfigButton" to="." method="_on_GotoConfigButton_pressed"]
+
+[editable path="CircularCountDown"]
+[editable path="CircularCountDown/CircularProgressBar"]

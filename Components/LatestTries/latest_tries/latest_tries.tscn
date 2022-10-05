@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://latest_tries/latest_tries.gd" type="Script" id=1]
+
+[node name="LatestTries" type="HBoxContainer"]
+script = ExtResource( 1 )

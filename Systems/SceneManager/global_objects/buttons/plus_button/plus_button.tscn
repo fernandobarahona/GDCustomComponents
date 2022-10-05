@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://global_objects/buttons/plus_button/RoundPlus.png" type="Texture" id=1]
+
+[node name="PlusButton" type="TextureButton"]
+margin_right = 134.0
+margin_bottom = 134.0
+texture_normal = ExtResource( 1 )
+expand = true

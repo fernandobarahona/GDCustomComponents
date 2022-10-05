@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://screens/main_menu/main_menu.gd" type="Script" id=1]
+[ext_resource path="res://global_assets/theme_1/theme_1.tres" type="Theme" id=5]
+
+[node name="MainMenu" type="Control"]
+theme = ExtResource( 5 )
+script = ExtResource( 1 )
+
+[node name="SubMenuAButton" type="Button" parent="."]
+margin_left = 236.0
+margin_top = 216.0
+margin_right = 795.0
+margin_bottom = 345.0
+text = "submenu a"
+
+[node name="SubMenuBButton" type="Button" parent="."]
+margin_left = 228.0
+margin_top = 408.0
+margin_right = 799.0
+margin_bottom = 541.0
+text = "submenu b"
+
+[node name="GotoConfigButton" type="Button" parent="."]
+margin_left = 332.0
+margin_top = 896.0
+margin_right = 728.0
+margin_bottom = 1033.0
+text = "config"
+
+[connection signal="pressed" from="SubMenuAButton" to="." method="_on_SubMenuAButton_pressed"]
+[connection signal="pressed" from="SubMenuBButton" to="." method="_on_SubMenuBButton_pressed"]
+[connection signal="pressed" from="GotoConfigButton" to="." method="_on_GotoConfigButton_pressed"]

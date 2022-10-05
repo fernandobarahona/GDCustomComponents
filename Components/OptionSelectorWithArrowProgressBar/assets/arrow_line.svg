@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1080"
+   height="1920"
+   viewBox="0 0 285.75 508"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="arrow_line.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.66772387"
+     inkscape:cx="430.5672"
+     inkscape:cy="589.31546"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     units="px" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.62470865"
+       d="M 15.970753,176.23867 H 265.33867"
+       id="path907"
+       inkscape:export-filename="C:\Users\Home\Documents\AprenderProgramacion\Godot\arrow_selector_project\assets\arrow_line2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       sodipodi:type="star"
+       style="fill:none;stroke:#000080;stroke-width:149.091;stroke-linecap:round;stroke-opacity:0.624709"
+       id="path1205"
+       inkscape:flatsided="false"
+       sodipodi:sides="3"
+       sodipodi:cx="222.38599"
+       sodipodi:cy="457.47971"
+       sodipodi:r1="153.55222"
+       sodipodi:r2="76.776108"
+       sodipodi:arg1="0.92729522"
+       sodipodi:arg2="1.9744928"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 314.51732,580.32148 192.22677,528.08418 69.936226,475.84689 176.32032,396.05882 l 106.3841,-79.78807 15.90645,132.02537 z"
+       transform="matrix(0.02464593,-0.01060134,0.01060134,0.02464593,12.710779,160.70912)"
+       inkscape:transform-center-x="-0.67993914"
+       inkscape:transform-center-y="-1.4556177"
+       inkscape:export-filename="C:\Users\Home\Documents\AprenderProgramacion\Godot\arrow_selector_project\assets\arrow_pointer.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       sodipodi:type="star"
+       style="fill:#ff0000;stroke:#c87137;stroke-width:37.7953;stroke-linecap:round;stroke-opacity:0.624709"
+       id="path1405"
+       inkscape:flatsided="false"
+       sodipodi:sides="5"
+       sodipodi:cx="142.27438"
+       sodipodi:cy="452.28278"
+       sodipodi:r1="124.83403"
+       sodipodi:r2="62.417019"
+       sodipodi:arg1="0.52807445"
+       sodipodi:arg2="1.156393"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 250.10338,515.18303 167.40621,509.41661 115.77368,574.2715 95.703036,493.83989 18.067049,464.7757 88.35988,420.83265 l 3.650849,-82.81754 63.514011,53.2733 79.89233,-22.11986 -31.03902,76.86776 z"
+       transform="matrix(0.1945988,0,0,0.19459928,2.2535384,33.996405)"
+       inkscape:transform-center-x="0.054362158"
+       inkscape:transform-center-y="-6.0260131"
+       inkscape:export-filename="C:\Users\Home\Documents\AprenderProgramacion\Godot\arrow_selector_project\assets\star_focused.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+</svg>

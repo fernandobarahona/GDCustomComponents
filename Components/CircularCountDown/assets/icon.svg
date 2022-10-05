@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="16"
+   height="16"
+   viewBox="0 0 4.2333333 4.2333333"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="icon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     inkscape:zoom="30.217733"
+     inkscape:cx="11.863895"
+     inkscape:cy="4.0870042"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path846"
+       style="fill:none;stroke:#8eef97;stroke-width:0.351362;stroke-linecap:square;stroke-linejoin:bevel;stop-color:#000000"
+       d="m 2.118927,0.19294155 c 0.2351642,-10e-9 0.4604846,0.0421469 0.6688193,0.11929898 m 0.588925,0.34804902 C 3.5501017,0.80996817 3.6965529,0.9900537 3.8077433,1.1922645 M 4.0449125,2.118927 c 0,0.2551447 -0.049613,0.4987016 -0.1397181,0.7215498 M 3.4850943,3.4765011 C 3.3066646,3.6560531 3.0930783,3.8006277 2.8555248,3.8990355 M 2.118927,4.0449125 c -0.2723011,0 -0.5314037,-0.056509 -0.7662204,-0.1584411 M 0.67750141,3.3963444 C 0.53514395,3.2358283 0.41918857,3.0513647 0.33644139,2.8497598 M 0.19294155,2.118927 c 1e-8,-0.2081062 0.033006,-0.4085034 0.0940687,-0.5962424"
+       sodipodi:nodetypes="cccccccccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:sans-serif;fill:#8eef97;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="1.1295106"
+       y="3.2571933"
+       id="text1502"><tspan
+         sodipodi:role="line"
+         id="tspan1500"
+         style="font-size:3.175px;fill:#8eef97;fill-opacity:1;stroke-width:0.264583"
+         x="1.1295106"
+         y="3.2571933">3</tspan></text>
+  </g>
+</svg>

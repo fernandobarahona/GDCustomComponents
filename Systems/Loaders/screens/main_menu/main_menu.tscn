@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/fonts/Tigerious_dynamicfont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://screens/main_menu/main_menu.gd" type="Script" id=2]
+
+[node name="MainMenu" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 153.0
+margin_top = 784.0
+margin_right = 945.0
+margin_bottom = 1021.0
+custom_fonts/font = ExtResource( 1 )
+text = "goto menu 1"
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

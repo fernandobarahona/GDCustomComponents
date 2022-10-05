@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://positional_arrow/positional_arrow.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/arrow_pointer.png" type="Texture" id=2]
+[ext_resource path="res://assets/arrow_line.png" type="Texture" id=3]
+[ext_resource path="res://assets/estrella_off.png" type="Texture" id=4]
+[ext_resource path="res://main.gd" type="Script" id=5]
+
+[node name="main" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="PositionalArrow" parent="." instance=ExtResource( 1 )]
+position = Vector2( 548, 923 )
+line_texture = ExtResource( 3 )
+pointer_texture = ExtResource( 2 )
+pointer_x_position = 586.0
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = -36.0
+margin_top = 659.0
+margin_right = 134.0
+margin_bottom = 829.0
+texture_normal = ExtResource( 4 )
+expand = true
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+margin_left = 961.0
+margin_top = 683.0
+margin_right = 1131.0
+margin_bottom = 853.0
+texture_normal = ExtResource( 4 )
+expand = true
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="TextureButton2" to="." method="_on_TextureButton2_pressed"]

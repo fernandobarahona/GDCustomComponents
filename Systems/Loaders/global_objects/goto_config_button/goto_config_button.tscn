@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/fonts/Tigerious_dynamicfont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://global_objects/goto_config_button/goto_config_button.gd" type="Script" id=2]
+
+[node name="GotoConfigButton" type="Button"]
+margin_left = 86.0
+margin_top = 831.0
+margin_right = 1000.0
+margin_bottom = 1150.0
+custom_fonts/font = ExtResource( 1 )
+text = "goto config menu"
+script = ExtResource( 2 )
+
+[connection signal="pressed" from="." to="." method="_on_GotoConfigButton_pressed"]
